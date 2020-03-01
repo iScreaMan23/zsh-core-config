@@ -116,6 +116,7 @@ zle -N edit-command-line
 bindkey '^X^E' edit-command-line
 
 bindkey -M menuselect " " accept-and-menu-complete
+export KEYTIMEOUT=1
 
 alias tmp='cd $(mktemp -d)'
 alias cdo='cd -'
